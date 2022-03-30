@@ -4,38 +4,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
 
-
-/* Ben Vicinelli
- * CSC-112 Fall 2021
- * Programming Assignment 5
- * November 30, 2021
- * This program recreates the Wheel of Fortune game, using GUI components to create an interactive experience
- * where the user can click buttons and enter input on a screen to see results of the game.
- */
-/* INSTRUCTIONS:
-    - When a player's turn begins, they have the option to click one of three buttons. The "SPIN WHEEL" button spins a
-      wheel with outcomes of "lose a turn", "bankrupt", or $100, $200, $300, $400, $500, $600. If the player successfully
-      guesses a consonant in the word, they recieve the number of consonants in the word times the amount of money spun.
-      The "BUY A VOWEL" button allows the player to spend $250 to buy a vowel. The "SOLVE" button allows the player to
-      attempt to solve the puzzle. Each player's money for the current game and money for the total match are kept on
-      the screen. The player only recieves money from a game if they win that game. The puzzle is updated towards the top
-      of the screen and the game number is updated towards the bottom. Simplified instructions are also on the screen.
- */
-/* GUI OBJECTS USED:
-    - JTABLE: I used a JTable as one of my GUI objects that is used to display simplified instructions of what each button does
-      onto the screen.
-    - JOPTIONPANE: I used multiple JOptionPane's throughput my code for different purposes. Some simply displayed a message,
-      such as notifying a user when their guess was incorrect. Other's promted for input, such as asking the user for a
-      consonant; I then took that input and was able to check if it was correct or not; based on whether it was correct or
-      not, I used another JOptionPane to display another message.
- */
-/* SPECIAL FEATURE:
-    - My special feature for this program is that the user can enter their own name. As opposed to just "player 1" and "player 2",
-      the user is asked to input their name with a JOptionPane at the beginning of the game, allowing a user to add a personal
-      touch to the game.
- */
-
-
 public class WOFFrame extends JFrame implements ActionListener{
 
     //here are all my GUI objects
